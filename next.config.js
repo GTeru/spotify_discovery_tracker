@@ -1,4 +1,11 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+const nextConfig = {
+  webpack: (config, context) => {
+    config.watchOptions = {
+      poll: 1000,
+    };
+    return config;
+  },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
