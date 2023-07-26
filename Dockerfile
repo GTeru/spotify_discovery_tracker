@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/vscode/devcontainers/javascript-node:dev-18-bullseye
+FROM node:18-bookworm
 
 ENV CHOKIDAR_USEPOLLING=true
 
